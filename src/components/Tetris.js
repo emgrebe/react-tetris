@@ -23,8 +23,9 @@ const Tetris = () => {
 
 
   const movePlayer = direction => {
-    if(!checkCollision(player, stage, { x: direction, y: 0 }))
-    updatePlayerPosition({ x: direction, y: 0 })
+    if(!checkCollision(player, stage, { x: direction, y: 0 })) {
+      updatePlayerPosition({ x: direction, y: 0 })
+    }
   }
 
   const startGame = () => {
